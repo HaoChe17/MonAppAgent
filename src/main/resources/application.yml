@@ -1,0 +1,26 @@
+spring:
+#  profiles:
+##　　表示所用配置文件为application-dev.yml
+#    active: dev
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://rm-bp131v4sa3q248h9q342.mysql.rds.aliyuncs.com:3008/pinpoint?characterEncoding=utf8
+    username: qgd_stf_wt_qa
+    password: PhEG6KP2nHsCnOz9jRfE
+    tomcat:
+      initialSize: 1
+      min-idle: 1
+      max-idle: 20
+      max-wait: 60000
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 30000
+      validationQuery: SELECT 1
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+server:
+  port: 8765
+logging:
+  file: mon.log
+
+

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.che.dao.mapper.AppMapper">
+
+    <resultMap id="appMap" type="com.che.pojo.App">
+        <result property="id" column="id"/>
+        <result property="measurement" column="measurement"/>
+        <result property="appKeyName" column="appKeyName"/>
+        <result property="ip" column="ip"/>
+        <result property="intervalTime" column="intervalTime"/>
+        <result property="jdkPath" column="jdkPath"/>
+        <result property="isvalid" column="isvalid"/>
+    </resultMap>
+    <!--<select id="findAllAppsByIp" parameterType="String" resultMap="appMap">-->
+        <!--SELECT id,measurement,appKeyName,ip,intervalTime,jdkPath,isvalid FROM mon_app WHERE isvalid=1 AND ip=#{ip}-->
+    <!--</select>-->
+
+    <select id="findAllAppsByIp" parameterType="String" resultType="com.che.pojo.App">
+        SELECT * FROM mon_app WHERE isvalid=1 AND ip=#{ip}
+    </select>
+
+    <select id="findAppByMeasurement" parameterType="String" resultType="com.che.pojo.App">
+        SELECT * FROM mon_app where measurement=#{measurement}
+    </select>
+
+
+    <insert id="addApp" parameterType="com.che.pojo.App">
+        INSERT INTO mon_app(measurement,appKeyName,ip,intervalTime,jdkPath,isvalid,getJvmIntervalCounts) VALUE (#{measurement},#{appKeyName},#{ip},#{intervalTime},#{jdkPath},#{isvalid},#{getJvmIntervalCounts})
+    </insert>
+
+    <update id="deleteAppByMeasurement" parameterType="String">
+        UPDATE mon_app SET isvalid=0 WHERE measurement=#{measurement}
+    </update>
+
+    <update id="recoverAppIsvalidByMeasurement" parameterType="String">
+        UPDATE mon_app SET isvalid=1 WHERE measurement=#{measurement}
+    </update>
+
+    <update id="addAppJvmParaByMeasurement" parameterType="com.che.pojo.App">
+        UPDATE mon_app SET startJvmPara=#{startJvmPara} WHERE measurement=#{measurement}
+    </update>
+
+</mapper>

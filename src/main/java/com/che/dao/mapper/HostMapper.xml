@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.che.dao.mapper.HostMapper">
+
+    <select id="findHostByIp"  parameterType="String" resultType="com.che.pojo.Host">
+        SELECT * FROM mon_host WHERE isvalid=1 AND ip=#{ip}
+    </select>
+
+    <select id="findHostByMeasurement" parameterType="String" resultType="com.che.pojo.Host">
+        SELECT * FROM mon_host where measurement=#{measurement}
+    </select>
+
+
+    <insert id="addHost" parameterType="com.che.pojo.Host">
+        INSERT INTO mon_host(measurement,ip,intervalTime) VALUE (#{measurement},#{ip},#{intervalTime})
+    </insert>
+
+    <!--<update id="deleteHostByMeasurement" parameterType="String">-->
+        <!--UPDATE mon_app SET isvalid=0 WHERE measurement=#{measurement}-->
+    <!--</update>-->
+
+    <!--<update id="recoverHostIsvalidByMeasurement" parameterType="String">-->
+        <!--UPDATE mon_app SET isvalid=1 WHERE measurement=#{measurement}-->
+    <!--</update>-->
+
+</mapper>

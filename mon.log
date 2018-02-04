@@ -1,0 +1,355 @@
+2018-02-03 17:28:01.757 error 30727 --- [main] com.che.MonAgentApplication              : Starting MonAgentApplication on chedeMacBook-Pro.local with PID 30727 (/Users/che/IdeaProjects/MonAppAgent/target/classes started by che in /Users/che/IdeaProjects/MonAppAgent)
+2018-02-03 17:28:01.759 error 30727 --- [main] com.che.MonAgentApplication              : No active profile set, falling back to default profiles: default
+2018-02-03 17:28:01.968 error 30727 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5a63f509: startup date [Sat Feb 03 17:28:01 CST 2018]; root of context hierarchy
+2018-02-03 17:28:03.623 error 30727 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8765 (http)
+2018-02-03 17:28:03.652 error 30727 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-03 17:28:03.653 error 30727 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-02-03 17:28:03.771 error 30727 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-03 17:28:03.771 error 30727 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1807 ms
+2018-02-03 17:28:03.896 error 30727 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-03 17:28:03.901 error 30727 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-03 17:28:03.902 error 30727 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-03 17:28:03.903 error 30727 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-03 17:28:03.903 error 30727 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-03 17:28:04.679 error 30727 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5a63f509: startup date [Sat Feb 03 17:28:01 CST 2018]; root of context hierarchy
+2018-02-03 17:28:04.744 error 30727 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getInfo],methods=[GET]}" onto public java.lang.String com.che.controller.GetMonController.getJsonMonInfo(java.lang.String,java.lang.String)
+2018-02-03 17:28:04.746 error 30727 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addMonApp],methods=[GET]}" onto public java.lang.String com.che.controller.MonSetController.addMonApp(java.lang.String,java.lang.String,java.lang.String)
+2018-02-03 17:28:04.746 error 30727 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/remove],methods=[GET]}" onto public java.lang.String com.che.controller.MonSetController.removeApp(java.lang.String)
+2018-02-03 17:28:04.749 error 30727 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-03 17:28:04.750 error 30727 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-03 17:28:04.771 error 30727 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-03 17:28:04.771 error 30727 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-03 17:28:04.802 error 30727 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-03 17:28:05.089 error 30727 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-03 17:28:05.154 error 30727 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8765 (http)
+2018-02-03 17:28:05.157 error 30727 --- [main] com.che.init.InitComplenent              : 开始获取当前服务器的ip……
+2018-02-03 17:28:05.176 error 30727 --- [main] com.che.utils.ExecShellCmd               : execute the shell command"ifconfig|sed -n 2p|awk '{print $2}'|awk -F ":" '{print $2}'
+2018-02-03 17:28:05.183 error 30727 --- [main] com.che.utils.ExecShellCmd               : the executing result of "ifconfig|sed -n 2p|awk '{print $2}'|awk -F ":" '{print $2}'":
+
+2018-02-03 17:28:05.184 error 30727 --- [main] com.che.init.InitComplenent              : 当前服务器的ip：
+2018-02-03 17:28:05.184 error 30727 --- [main] com.che.init.InitComplenent              : 获取被监控应用的初始化数据……
+2018-02-03 17:28:07.157 error 30727 --- [main] com.che.service.mon.OperateHost          : 当前服务器已经纳入监控
+2018-02-03 17:28:07.162 error 30727 --- [main] com.che.MonAgentApplication              : Started MonAgentApplication in 6.309 seconds (JVM running for 7.106)
+2018-02-03 17:28:07.164 error 30727 --- [Thread-6] com.che.utils.ExecShellCmd               : execute the shell command"iostat -dx -k -c 1 2
+2018-02-03 17:28:07.175 error 30727 --- [Thread-6] com.che.utils.ExecShellCmd               : the executing result of "iostat -dx -k -c 1 2":
+2018-02-03 17:28:18.494 error 30727 --- [Thread-4] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5a63f509: startup date [Sat Feb 03 17:28:01 CST 2018]; root of context hierarchy
+2018-02-03 17:28:18.495 error 30727 --- [Thread-4] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-02-03 17:28:26.160 error 30739 --- [main] com.che.MonAgentApplicationTests         : Starting MonAgentApplicationTests on chedeMacBook-Pro.local with PID 30739 (started by che in /Users/che/IdeaProjects/MonAppAgent)
+2018-02-03 17:28:26.163 error 30739 --- [main] com.che.MonAgentApplicationTests         : No active profile set, falling back to default profiles: default
+2018-02-03 17:28:26.199 error 30739 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@353352b6: startup date [Sat Feb 03 17:28:26 CST 2018]; root of context hierarchy
+2018-02-03 17:28:28.408 error 30739 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@353352b6: startup date [Sat Feb 03 17:28:26 CST 2018]; root of context hierarchy
+2018-02-03 17:28:28.468 error 30739 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getInfo],methods=[GET]}" onto public java.lang.String com.che.controller.GetMonController.getJsonMonInfo(java.lang.String,java.lang.String)
+2018-02-03 17:28:28.469 error 30739 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addMonApp],methods=[GET]}" onto public java.lang.String com.che.controller.MonSetController.addMonApp(java.lang.String,java.lang.String,java.lang.String)
+2018-02-03 17:28:28.470 error 30739 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/remove],methods=[GET]}" onto public java.lang.String com.che.controller.MonSetController.removeApp(java.lang.String)
+2018-02-03 17:28:28.472 error 30739 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-03 17:28:28.473 error 30739 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-03 17:28:28.495 error 30739 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-03 17:28:28.495 error 30739 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-03 17:28:28.527 error 30739 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-03 17:28:28.803 error 30739 --- [main] com.che.init.InitComplenent              : 开始获取当前服务器的ip……
+2018-02-03 17:28:28.838 error 30739 --- [main] com.che.utils.ExecShellCmd               : execute the shell command"ifconfig|sed -n 2p|awk '{print $2}'|awk -F ":" '{print $2}'
+2018-02-03 17:28:28.845 error 30739 --- [main] com.che.utils.ExecShellCmd               : the executing result of "ifconfig|sed -n 2p|awk '{print $2}'|awk -F ":" '{print $2}'":
+
+2018-02-03 17:28:28.845 error 30739 --- [main] com.che.init.InitComplenent              : 当前服务器的ip：
+2018-02-03 17:28:28.845 error 30739 --- [main] com.che.init.InitComplenent              : 获取被监控应用的初始化数据……
+2018-02-03 17:28:30.401 error 30739 --- [main] com.che.service.mon.OperateHost          : 当前服务器已经纳入监控
+2018-02-03 17:28:30.405 error 30739 --- [main] com.che.MonAgentApplicationTests         : Started MonAgentApplicationTests in 4.575 seconds (JVM running for 5.253)
+2018-02-03 17:28:30.407 error 30739 --- [Thread-5] com.che.utils.ExecShellCmd               : execute the shell command"iostat -dx -k -c 1 2
+2018-02-03 17:28:30.416 error 30739 --- [Thread-5] com.che.utils.ExecShellCmd               : the executing result of "iostat -dx -k -c 1 2":
+2018-02-03 17:28:30.571 error 30739 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@353352b6: startup date [Sat Feb 03 17:28:26 CST 2018]; root of context hierarchy
+2018-02-03 17:32:48.816 error 30752 --- [main] com.che.MonAgentApplicationTests         : Starting MonAgentApplicationTests on chedeMacBook-Pro.local with PID 30752 (started by che in /Users/che/IdeaProjects/MonAppAgent)
+2018-02-03 17:32:48.817 error 30752 --- [main] com.che.MonAgentApplicationTests         : No active profile set, falling back to default profiles: default
+2018-02-03 17:32:48.869 error 30752 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@353352b6: startup date [Sat Feb 03 17:32:48 CST 2018]; root of context hierarchy
+2018-02-03 17:32:51.530 error 30752 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@353352b6: startup date [Sat Feb 03 17:32:48 CST 2018]; root of context hierarchy
+2018-02-03 17:32:51.617 error 30752 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getInfo],methods=[GET]}" onto public java.lang.String com.che.controller.GetMonController.getJsonMonInfo(java.lang.String,java.lang.String)
+2018-02-03 17:32:51.619 error 30752 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addMonApp],methods=[GET]}" onto public java.lang.String com.che.controller.MonSetController.addMonApp(java.lang.String,java.lang.String,java.lang.String)
+2018-02-03 17:32:51.620 error 30752 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/remove],methods=[GET]}" onto public java.lang.String com.che.controller.MonSetController.removeApp(java.lang.String)
+2018-02-03 17:32:51.623 error 30752 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-03 17:32:51.623 error 30752 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-03 17:32:51.649 error 30752 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-03 17:32:51.649 error 30752 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-03 17:32:51.679 error 30752 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-03 17:32:51.939 error 30752 --- [main] com.che.init.InitComplenent              : 开始获取当前服务器的ip……
+2018-02-03 17:32:51.956 error 30752 --- [main] com.che.utils.ExecShellCmd               : execute the shell command"ifconfig|sed -n 2p|awk '{print $2}'|awk -F ":" '{print $2}'
+2018-02-03 17:32:51.962 error 30752 --- [main] com.che.utils.ExecShellCmd               : the executing result of "ifconfig|sed -n 2p|awk '{print $2}'|awk -F ":" '{print $2}'":
+
+2018-02-03 17:32:51.963 error 30752 --- [main] com.che.init.InitComplenent              : 当前服务器的ip：
+2018-02-03 17:32:51.963 error 30752 --- [main] com.che.init.InitComplenent              : 获取被监控应用的初始化数据……
+2018-02-03 17:32:55.448 error 30752 --- [main] com.che.service.mon.OperateHost          : 当前服务器已经纳入监控
+2018-02-03 17:32:55.458 error 30752 --- [main] com.che.MonAgentApplicationTests         : Started MonAgentApplicationTests in 7.017 seconds (JVM running for 7.8)
+2018-02-03 17:32:55.459 error 30752 --- [Thread-5] com.che.utils.ExecShellCmd               : execute the shell command"iostat -dx -k -c 1 2
+2018-02-03 17:32:55.468 error 30752 --- [Thread-5] com.che.utils.ExecShellCmd               : the executing result of "iostat -dx -k -c 1 2":
+2018-02-03 17:32:55.671 error 30752 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@353352b6: startup date [Sat Feb 03 17:32:48 CST 2018]; root of context hierarchy
+2018-02-03 17:34:55.608 error 30762 --- [main] com.che.MonAgentApplicationTests         : Starting MonAgentApplicationTests on chedeMacBook-Pro.local with PID 30762 (started by che in /Users/che/IdeaProjects/MonAppAgent)
+2018-02-03 17:34:55.609 error 30762 --- [main] com.che.MonAgentApplicationTests         : No active profile set, falling back to default profiles: default
+2018-02-03 17:34:55.649 error 30762 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@353352b6: startup date [Sat Feb 03 17:34:55 CST 2018]; root of context hierarchy
+2018-02-03 17:34:57.983 error 30762 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@353352b6: startup date [Sat Feb 03 17:34:55 CST 2018]; root of context hierarchy
+2018-02-03 17:34:58.076 error 30762 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getInfo],methods=[GET]}" onto public java.lang.String com.che.controller.GetMonController.getJsonMonInfo(java.lang.String,java.lang.String)
+2018-02-03 17:34:58.077 error 30762 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addMonApp],methods=[GET]}" onto public java.lang.String com.che.controller.MonSetController.addMonApp(java.lang.String,java.lang.String,java.lang.String)
+2018-02-03 17:34:58.078 error 30762 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/remove],methods=[GET]}" onto public java.lang.String com.che.controller.MonSetController.removeApp(java.lang.String)
+2018-02-03 17:34:58.081 error 30762 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-03 17:34:58.082 error 30762 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-03 17:34:58.106 error 30762 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-03 17:34:58.107 error 30762 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-03 17:34:58.138 error 30762 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-03 17:34:58.403 error 30762 --- [main] com.che.init.InitComplenent              : 开始获取当前服务器的ip……
+2018-02-03 17:34:58.418 error 30762 --- [main] com.che.utils.ExecShellCmd               : execute the shell command"ifconfig|sed -n 2p|awk '{print $2}'|awk -F ":" '{print $2}'
+2018-02-03 17:34:58.424 error 30762 --- [main] com.che.utils.ExecShellCmd               : the executing result of "ifconfig|sed -n 2p|awk '{print $2}'|awk -F ":" '{print $2}'":
+
+2018-02-03 17:34:58.425 error 30762 --- [main] com.che.init.InitComplenent              : 当前服务器的ip：
+2018-02-03 17:34:58.426 error 30762 --- [main] com.che.init.InitComplenent              : 获取被监控应用的初始化数据……
+2018-02-03 17:35:01.532 error 30762 --- [main] com.che.service.mon.OperateHost          : 当前服务器已经纳入监控
+2018-02-03 17:35:01.536 error 30762 --- [main] com.che.MonAgentApplicationTests         : Started MonAgentApplicationTests in 6.539 seconds (JVM running for 7.28)
+2018-02-03 17:35:01.538 error 30762 --- [Thread-5] com.che.utils.ExecShellCmd               : execute the shell command"iostat -dx -k -c 1 2
+2018-02-03 17:35:01.545 error 30762 --- [Thread-5] com.che.utils.ExecShellCmd               : the executing result of "iostat -dx -k -c 1 2":
+2018-02-03 17:35:01.603 error 30762 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@353352b6: startup date [Sat Feb 03 17:34:55 CST 2018]; root of context hierarchy
+2018-02-03 17:36:24.818 error 30775 --- [main] com.che.MonAgentApplicationTests         : Starting MonAgentApplicationTests on chedeMacBook-Pro.local with PID 30775 (started by che in /Users/che/IdeaProjects/MonAppAgent)
+2018-02-03 17:36:24.819 error 30775 --- [main] com.che.MonAgentApplicationTests         : No active profile set, falling back to default profiles: default
+2018-02-03 17:36:24.867 error 30775 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@353352b6: startup date [Sat Feb 03 17:36:24 CST 2018]; root of context hierarchy
+2018-02-03 17:36:27.221 error 30775 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@353352b6: startup date [Sat Feb 03 17:36:24 CST 2018]; root of context hierarchy
+2018-02-03 17:36:27.299 error 30775 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getInfo],methods=[GET]}" onto public java.lang.String com.che.controller.GetMonController.getJsonMonInfo(java.lang.String,java.lang.String)
+2018-02-03 17:36:27.301 error 30775 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addMonApp],methods=[GET]}" onto public java.lang.String com.che.controller.MonSetController.addMonApp(java.lang.String,java.lang.String,java.lang.String)
+2018-02-03 17:36:27.301 error 30775 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/remove],methods=[GET]}" onto public java.lang.String com.che.controller.MonSetController.removeApp(java.lang.String)
+2018-02-03 17:36:27.304 error 30775 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-03 17:36:27.304 error 30775 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-03 17:36:27.329 error 30775 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-03 17:36:27.330 error 30775 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-03 17:36:27.368 error 30775 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-03 17:36:27.606 error 30775 --- [main] com.che.init.InitComplenent              : 开始获取当前服务器的ip……
+2018-02-03 17:36:27.629 error 30775 --- [main] com.che.utils.ExecShellCmd               : execute the shell command"ifconfig|sed -n 2p|awk '{print $2}'|awk -F ":" '{print $2}'
+2018-02-03 17:36:27.635 error 30775 --- [main] com.che.utils.ExecShellCmd               : the executing result of "ifconfig|sed -n 2p|awk '{print $2}'|awk -F ":" '{print $2}'":
+
+2018-02-03 17:36:27.636 error 30775 --- [main] com.che.init.InitComplenent              : 当前服务器的ip：
+2018-02-03 17:36:27.636 error 30775 --- [main] com.che.init.InitComplenent              : 获取被监控应用的初始化数据……
+2018-02-03 17:36:29.394 error 30775 --- [main] com.che.service.mon.OperateHost          : 当前服务器已经纳入监控
+2018-02-03 17:36:29.397 error 30775 --- [main] com.che.MonAgentApplicationTests         : Started MonAgentApplicationTests in 4.939 seconds (JVM running for 5.732)
+2018-02-03 17:36:29.398 error 30775 --- [Thread-5] com.che.utils.ExecShellCmd               : execute the shell command"iostat -dx -k -c 1 2
+2018-02-03 17:36:29.408 error 30775 --- [Thread-5] com.che.utils.ExecShellCmd               : the executing result of "iostat -dx -k -c 1 2":
+2018-02-03 17:36:29.409 error 30775 --- [Thread-5] com.che.service.mon.GetOsInfo            : get devInfo is wrong! devKeyInfo=[],devValueStr=
+2018-02-03 17:36:29.412 error 30775 --- [Thread-5] com.che.utils.ExecShellCmd               : execute the shell command"df -h
+2018-02-03 17:36:29.419 error 30775 --- [Thread-5] com.che.utils.ExecShellCmd               : the executing result of "df -h":Filesystem      Size   Used  Avail Capacity iused      ifree %iused  Mounted on
+/dev/disk1     112Gi  101Gi   11Gi    91%  997234 4293970045    0%   /
+devfs          182Ki  182Ki    0Bi   100%     630          0  100%   /dev
+map -hosts       0Bi    0Bi    0Bi   100%       0          0  100%   /net
+map auto_home    0Bi    0Bi    0Bi   100%       0          0  100%   /home
+
+2018-02-03 17:36:29.420 error 30775 --- [Thread-5] com.che.service.mon.GetOsInfo            : get devInfo is wrong! diskSpaceKeyInfo=[Filesystem	Size	Used	Avail	Capacity	iused	ifree	%iused	Mounted	on],diskSpaceValueStr=map	auto_home	0Bi	0Bi	0Bi	100%	0	0	100%	/home
+2018-02-03 17:36:29.465 error 30775 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@353352b6: startup date [Sat Feb 03 17:36:24 CST 2018]; root of context hierarchy
+2018-02-03 17:44:22.549 error 30792 --- [main] com.che.MonAgentApplicationTests         : Starting MonAgentApplicationTests on chedeMacBook-Pro.local with PID 30792 (started by che in /Users/che/IdeaProjects/MonAppAgent)
+2018-02-03 17:44:22.551 error 30792 --- [main] com.che.MonAgentApplicationTests         : No active profile set, falling back to default profiles: default
+2018-02-03 17:44:22.603 error 30792 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@353352b6: startup date [Sat Feb 03 17:44:22 CST 2018]; root of context hierarchy
+2018-02-03 17:44:25.192 error 30792 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@353352b6: startup date [Sat Feb 03 17:44:22 CST 2018]; root of context hierarchy
+2018-02-03 17:44:25.274 error 30792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getInfo],methods=[GET]}" onto public java.lang.String com.che.controller.GetMonController.getJsonMonInfo(java.lang.String,java.lang.String)
+2018-02-03 17:44:25.276 error 30792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addMonApp],methods=[GET]}" onto public java.lang.String com.che.controller.MonSetController.addMonApp(java.lang.String,java.lang.String,java.lang.String)
+2018-02-03 17:44:25.276 error 30792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/remove],methods=[GET]}" onto public java.lang.String com.che.controller.MonSetController.removeApp(java.lang.String)
+2018-02-03 17:44:25.280 error 30792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-03 17:44:25.281 error 30792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-03 17:44:25.307 error 30792 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-03 17:44:25.308 error 30792 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-03 17:44:25.346 error 30792 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-03 17:44:25.640 error 30792 --- [main] com.che.init.InitComplenent              : 开始获取当前服务器的ip……
+2018-02-03 17:44:25.653 error 30792 --- [main] com.che.utils.ExecShellCmd               : execute the shell command"ifconfig|sed -n 2p|awk '{print $2}'|awk -F ":" '{print $2}'
+2018-02-03 17:44:25.663 error 30792 --- [main] com.che.utils.ExecShellCmd               : the executing result of "ifconfig|sed -n 2p|awk '{print $2}'|awk -F ":" '{print $2}'":
+
+2018-02-03 17:44:25.664 error 30792 --- [main] com.che.init.InitComplenent              : 当前服务器的ip：
+2018-02-03 17:44:25.664 error 30792 --- [main] com.che.init.InitComplenent              : 获取被监控应用的初始化数据……
+2018-02-03 17:44:26.988 error 30792 --- [main] com.che.service.mon.OperateHost          : 当前服务器已经纳入监控
+2018-02-03 17:44:26.991 error 30792 --- [main] com.che.MonAgentApplicationTests         : Started MonAgentApplicationTests in 5.071 seconds (JVM running for 5.868)
+2018-02-03 17:44:27.016 error 30792 --- [Thread-5] com.che.utils.ExecShellCmd               : execute the shell command"iostat -dx -k -c 1 2
+2018-02-03 17:44:27.026 error 30792 --- [Thread-5] com.che.utils.ExecShellCmd               : the executing result of "iostat -dx -k -c 1 2":
+2018-02-03 17:44:27.027 error 30792 --- [Thread-5] com.che.service.mon.GetOsInfo            : get devInfo is wrong! devKeyInfo=[],devValueStr=
+2018-02-03 17:44:27.035 error 30792 --- [Thread-5] com.che.utils.ExecShellCmd               : execute the shell command"df -h
+2018-02-03 17:44:27.046 error 30792 --- [Thread-5] com.che.utils.ExecShellCmd               : the executing result of "df -h":Filesystem      Size   Used  Avail Capacity iused      ifree %iused  Mounted on
+/dev/disk1     112Gi  101Gi   11Gi    91%  997279 4293970000    0%   /
+devfs          182Ki  182Ki    0Bi   100%     630          0  100%   /dev
+map -hosts       0Bi    0Bi    0Bi   100%       0          0  100%   /net
+map auto_home    0Bi    0Bi    0Bi   100%       0          0  100%   /home
+
+2018-02-03 17:44:27.057 error 30792 --- [Thread-5] com.che.service.mon.GetOsInfo            : get devInfo is wrong! diskSpaceKeyInfo=[Filesystem	Size	Used	Avail	Capacity	iused	ifree	%iused	Mounted	on],diskSpaceValueStr=map	auto_home	0Bi	0Bi	0Bi	100%	0	0	100%	/home
+2018-02-03 17:44:27.111 error 30792 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@353352b6: startup date [Sat Feb 03 17:44:22 CST 2018]; root of context hierarchy
+2018-02-03 17:57:53.255 error 30815 --- [main] com.che.MonAgentApplicationTests         : Starting MonAgentApplicationTests on chedeMacBook-Pro.local with PID 30815 (started by che in /Users/che/IdeaProjects/MonAppAgent)
+2018-02-03 17:57:53.256 error 30815 --- [main] com.che.MonAgentApplicationTests         : No active profile set, falling back to default profiles: default
+2018-02-03 17:57:53.300 error 30815 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@353352b6: startup date [Sat Feb 03 17:57:53 CST 2018]; root of context hierarchy
+2018-02-03 17:57:55.616 error 30815 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@353352b6: startup date [Sat Feb 03 17:57:53 CST 2018]; root of context hierarchy
+2018-02-03 17:57:55.691 error 30815 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getInfo],methods=[GET]}" onto public java.lang.String com.che.controller.GetMonController.getJsonMonInfo(java.lang.String,java.lang.String)
+2018-02-03 17:57:55.692 error 30815 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addMonApp],methods=[GET]}" onto public java.lang.String com.che.controller.MonSetController.addMonApp(java.lang.String,java.lang.String,java.lang.String)
+2018-02-03 17:57:55.693 error 30815 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/remove],methods=[GET]}" onto public java.lang.String com.che.controller.MonSetController.removeApp(java.lang.String)
+2018-02-03 17:57:55.696 error 30815 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-03 17:57:55.719 error 30815 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-03 17:57:55.746 error 30815 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-03 17:57:55.746 error 30815 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-03 17:57:55.796 error 30815 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-03 17:57:56.062 error 30815 --- [main] com.che.init.InitComplenent              : 开始获取当前服务器的ip……
+2018-02-03 17:57:56.091 error 30815 --- [main] com.che.init.InitComplenent              : 当前服务器的ip：
+2018-02-03 17:57:56.091 error 30815 --- [main] com.che.init.InitComplenent              : 获取被监控应用的初始化数据……
+2018-02-03 17:57:58.423 error 30815 --- [main] com.che.service.mon.OperateHost          : 当前服务器已经纳入监控
+2018-02-03 17:57:58.427 error 30815 --- [main] com.che.MonAgentApplicationTests         : Started MonAgentApplicationTests in 5.706 seconds (JVM running for 6.443)
+2018-02-03 17:57:58.437 error 30815 --- [Thread-5] com.che.service.mon.GetOsInfo            : get devInfo is wrong! devKeyInfo=[],devValueStr=
+2018-02-03 17:57:58.445 error 30815 --- [Thread-5] com.che.service.mon.GetOsInfo            : get devInfo is wrong! diskSpaceKeyInfo=[Filesystem	Size	Used	Avail	Capacity	iused	ifree	%iused	Mounted	on],diskSpaceValueStr=map	auto_home	0Bi	0Bi	0Bi	100%	0	0	100%	/home
+2018-02-03 17:57:58.486 error 30815 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@353352b6: startup date [Sat Feb 03 17:57:53 CST 2018]; root of context hierarchy
+2018-02-03 18:01:42.271  INFO 30828 --- [main] com.che.MonAgentApplication              : Starting MonAgentApplication on chedeMacBook-Pro.local with PID 30828 (/Users/che/IdeaProjects/MonAppAgent/target/classes started by che in /Users/che/IdeaProjects/MonAppAgent)
+2018-02-03 18:01:42.274  INFO 30828 --- [main] com.che.MonAgentApplication              : No active profile set, falling back to default profiles: default
+2018-02-03 18:01:42.450  INFO 30828 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3e92efc3: startup date [Sat Feb 03 18:01:42 CST 2018]; root of context hierarchy
+2018-02-03 18:01:44.125  INFO 30828 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8765 (http)
+2018-02-03 18:01:44.144  INFO 30828 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-03 18:01:44.145  INFO 30828 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-02-03 18:01:44.266  INFO 30828 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-03 18:01:44.266  INFO 30828 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1838 ms
+2018-02-03 18:01:44.399  INFO 30828 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-03 18:01:44.406  INFO 30828 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-03 18:01:44.406  INFO 30828 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-03 18:01:44.406  INFO 30828 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-03 18:01:44.406  INFO 30828 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-03 18:01:45.250  INFO 30828 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3e92efc3: startup date [Sat Feb 03 18:01:42 CST 2018]; root of context hierarchy
+2018-02-03 18:01:45.342  INFO 30828 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getInfo],methods=[GET]}" onto public java.lang.String com.che.controller.GetMonController.getJsonMonInfo(java.lang.String,java.lang.String)
+2018-02-03 18:01:45.349  INFO 30828 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addMonApp],methods=[GET]}" onto public java.lang.String com.che.controller.MonSetController.addMonApp(java.lang.String,java.lang.String,java.lang.String)
+2018-02-03 18:01:45.350  INFO 30828 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/remove],methods=[GET]}" onto public java.lang.String com.che.controller.MonSetController.removeApp(java.lang.String)
+2018-02-03 18:01:45.356  INFO 30828 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-03 18:01:45.356  INFO 30828 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-03 18:01:45.427  INFO 30828 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-03 18:01:45.428  INFO 30828 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-03 18:01:45.471  INFO 30828 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-03 18:01:45.722  INFO 30828 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-03 18:01:45.790  INFO 30828 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8765 (http)
+2018-02-03 18:01:45.793  INFO 30828 --- [main] com.che.init.InitComplenent              : 开始获取当前服务器的ip……
+2018-02-03 18:01:45.815  INFO 30828 --- [main] com.che.init.InitComplenent              : 当前服务器的ip：
+2018-02-03 18:01:45.815  INFO 30828 --- [main] com.che.init.InitComplenent              : 获取被监控应用的初始化数据……
+2018-02-03 18:01:48.876  INFO 30828 --- [main] com.che.service.mon.OperateHost          : 当前服务器已经纳入监控
+2018-02-03 18:01:48.879  INFO 30828 --- [main] com.che.MonAgentApplication              : Started MonAgentApplication in 7.511 seconds (JVM running for 8.042)
+2018-02-03 18:01:48.898 ERROR 30828 --- [Thread-6] com.che.service.mon.GetOsInfo            : get devInfo is wrong! devKeyInfo=[],devValueStr=
+2018-02-03 18:01:48.906 ERROR 30828 --- [Thread-6] com.che.service.mon.GetOsInfo            : get devInfo is wrong! diskSpaceKeyInfo=[Filesystem	Size	Used	Avail	Capacity	iused	ifree	%iused	Mounted	on],diskSpaceValueStr=map	auto_home	0Bi	0Bi	0Bi	100%	0	0	100%	/home
+2018-02-03 18:03:16.160  INFO 30828 --- [Thread-4] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3e92efc3: startup date [Sat Feb 03 18:01:42 CST 2018]; root of context hierarchy
+2018-02-03 18:03:16.163  INFO 30828 --- [Thread-4] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-02-03 18:09:42.232  INFO 30920 --- [main] com.che.MonAgentApplicationTests         : Starting MonAgentApplicationTests on chedeMacBook-Pro.local with PID 30920 (started by che in /Users/che/IdeaProjects/MonAppAgent)
+2018-02-03 18:09:42.233  INFO 30920 --- [main] com.che.MonAgentApplicationTests         : No active profile set, falling back to default profiles: default
+2018-02-03 18:09:42.268  INFO 30920 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@413d1baf: startup date [Sat Feb 03 18:09:42 CST 2018]; root of context hierarchy
+2018-02-03 18:09:44.527  INFO 30920 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@413d1baf: startup date [Sat Feb 03 18:09:42 CST 2018]; root of context hierarchy
+2018-02-03 18:09:44.600  INFO 30920 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getInfo],methods=[GET]}" onto public java.lang.String com.che.controller.GetMonController.getJsonMonInfo(java.lang.String,java.lang.String)
+2018-02-03 18:09:44.602  INFO 30920 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addMonApp],methods=[GET]}" onto public java.lang.String com.che.controller.MonSetController.addMonApp(java.lang.String,java.lang.String,java.lang.String)
+2018-02-03 18:09:44.602  INFO 30920 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/remove],methods=[GET]}" onto public java.lang.String com.che.controller.MonSetController.removeApp(java.lang.String)
+2018-02-03 18:09:44.605  INFO 30920 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-03 18:09:44.606  INFO 30920 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-03 18:09:44.634  INFO 30920 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-03 18:09:44.635  INFO 30920 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-03 18:09:44.668  INFO 30920 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-03 18:09:44.916  INFO 30920 --- [main] com.che.init.InitComplenent              : 开始获取当前服务器的ip……
+2018-02-03 18:09:44.941  INFO 30920 --- [main] com.che.init.InitComplenent              : 当前服务器的ip：
+2018-02-03 18:09:44.942  INFO 30920 --- [main] com.che.init.InitComplenent              : 获取被监控应用的初始化数据……
+2018-02-03 18:09:48.966  INFO 30920 --- [main] com.che.service.mon.OperateHost          : 当前服务器已经纳入监控
+2018-02-03 18:09:48.969  INFO 30920 --- [main] com.che.MonAgentApplicationTests         : Started MonAgentApplicationTests in 7.128 seconds (JVM running for 7.845)
+2018-02-03 18:09:48.980 ERROR 30920 --- [Thread-5] com.che.service.mon.GetOsInfo            : get devInfo is wrong! devKeyInfo=[],devValueStr=
+2018-02-03 18:09:48.989 ERROR 30920 --- [Thread-5] com.che.service.mon.GetOsInfo            : get devInfo is wrong! diskSpaceKeyInfo=[Filesystem	Size	Used	Avail	Capacity	iused	ifree	%iused	Mounted	on],diskSpaceValueStr=map	auto_home	0Bi	0Bi	0Bi	100%	0	0	100%	/home
+2018-02-03 18:09:49.124  INFO 30920 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@413d1baf: startup date [Sat Feb 03 18:09:42 CST 2018]; root of context hierarchy
+2018-02-03 18:14:14.140  INFO 30937 --- [main] com.che.MonAgentApplicationTests         : Starting MonAgentApplicationTests on chedeMacBook-Pro.local with PID 30937 (started by che in /Users/che/IdeaProjects/MonAppAgent)
+2018-02-03 18:14:14.141  INFO 30937 --- [main] com.che.MonAgentApplicationTests         : No active profile set, falling back to default profiles: default
+2018-02-03 18:14:14.180  INFO 30937 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@413d1baf: startup date [Sat Feb 03 18:14:14 CST 2018]; root of context hierarchy
+2018-02-03 18:14:16.315  INFO 30937 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@413d1baf: startup date [Sat Feb 03 18:14:14 CST 2018]; root of context hierarchy
+2018-02-03 18:14:16.368  INFO 30937 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getInfo],methods=[GET]}" onto public java.lang.String com.che.controller.GetMonController.getJsonMonInfo(java.lang.String,java.lang.String)
+2018-02-03 18:14:16.370  INFO 30937 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addMonApp],methods=[GET]}" onto public java.lang.String com.che.controller.MonSetController.addMonApp(java.lang.String,java.lang.String,java.lang.String)
+2018-02-03 18:14:16.370  INFO 30937 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/remove],methods=[GET]}" onto public java.lang.String com.che.controller.MonSetController.removeApp(java.lang.String)
+2018-02-03 18:14:16.372  INFO 30937 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-03 18:14:16.375  INFO 30937 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-03 18:14:16.396  INFO 30937 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-03 18:14:16.397  INFO 30937 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-03 18:14:16.432  INFO 30937 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-03 18:14:16.702  INFO 30937 --- [main] com.che.init.InitComplenent              : 开始获取当前服务器的ip……
+2018-02-03 18:14:16.736  INFO 30937 --- [main] com.che.init.InitComplenent              : 当前服务器的ip：
+2018-02-03 18:14:16.736  INFO 30937 --- [main] com.che.init.InitComplenent              : 获取被监控应用的初始化数据……
+2018-02-03 18:14:18.601  INFO 30937 --- [main] com.che.service.mon.OperateHost          : 当前服务器已经纳入监控
+2018-02-03 18:14:18.606  INFO 30937 --- [main] com.che.MonAgentApplicationTests         : Started MonAgentApplicationTests in 5.087 seconds (JVM running for 5.815)
+2018-02-03 18:14:18.616 ERROR 30937 --- [Thread-5] com.che.service.mon.GetOsInfo            : get devInfo is wrong! devKeyInfo=[],devValueStr=
+2018-02-03 18:14:18.630 ERROR 30937 --- [Thread-5] com.che.service.mon.GetOsInfo            : get devInfo is wrong! diskSpaceKeyInfo=[Filesystem	Size	Used	Avail	Capacity	iused	ifree	%iused	Mounted	on],diskSpaceValueStr=map	auto_home	0Bi	0Bi	0Bi	100%	0	0	100%	/home
+2018-02-03 18:14:18.637 ERROR 30937 --- [Thread-5] com.che.service.mon.GetOsInfo            : get memInfo is wrong! memInfoKey_array=[],memValueStr=
+2018-02-03 18:14:18.782  INFO 30937 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@413d1baf: startup date [Sat Feb 03 18:14:14 CST 2018]; root of context hierarchy
+2018-02-03 18:15:46.716  INFO 30949 --- [main] com.che.MonAgentApplicationTests         : Starting MonAgentApplicationTests on chedeMacBook-Pro.local with PID 30949 (started by che in /Users/che/IdeaProjects/MonAppAgent)
+2018-02-03 18:15:46.717  INFO 30949 --- [main] com.che.MonAgentApplicationTests         : No active profile set, falling back to default profiles: default
+2018-02-03 18:15:46.749  INFO 30949 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@413d1baf: startup date [Sat Feb 03 18:15:46 CST 2018]; root of context hierarchy
+2018-02-03 18:15:49.018  INFO 30949 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@413d1baf: startup date [Sat Feb 03 18:15:46 CST 2018]; root of context hierarchy
+2018-02-03 18:15:49.075  INFO 30949 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getInfo],methods=[GET]}" onto public java.lang.String com.che.controller.GetMonController.getJsonMonInfo(java.lang.String,java.lang.String)
+2018-02-03 18:15:49.077  INFO 30949 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addMonApp],methods=[GET]}" onto public java.lang.String com.che.controller.MonSetController.addMonApp(java.lang.String,java.lang.String,java.lang.String)
+2018-02-03 18:15:49.077  INFO 30949 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/remove],methods=[GET]}" onto public java.lang.String com.che.controller.MonSetController.removeApp(java.lang.String)
+2018-02-03 18:15:49.080  INFO 30949 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-03 18:15:49.081  INFO 30949 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-03 18:15:49.104  INFO 30949 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-03 18:15:49.107  INFO 30949 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-03 18:15:49.140  INFO 30949 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-03 18:15:49.442  INFO 30949 --- [main] com.che.init.InitComplenent              : 开始获取当前服务器的ip……
+2018-02-03 18:15:49.492  INFO 30949 --- [main] com.che.init.InitComplenent              : 当前服务器的ip：
+2018-02-03 18:15:49.492  INFO 30949 --- [main] com.che.init.InitComplenent              : 获取被监控应用的初始化数据……
+2018-02-03 18:15:51.432  INFO 30949 --- [main] com.che.service.mon.OperateHost          : 当前服务器已经纳入监控
+2018-02-03 18:15:51.437  INFO 30949 --- [main] com.che.MonAgentApplicationTests         : Started MonAgentApplicationTests in 5.077 seconds (JVM running for 5.739)
+2018-02-03 18:15:51.454 ERROR 30949 --- [Thread-5] com.che.service.mon.GetOsInfo            : get devInfo is wrong! devKeyInfo=[],devValueStr=
+2018-02-03 18:15:51.462 ERROR 30949 --- [Thread-5] com.che.service.mon.GetOsInfo            : get devInfo is wrong! diskSpaceKeyInfo=[Filesystem	Size	Used	Avail	Capacity	iused	ifree	%iused	Mounted	on],diskSpaceValueStr=map	auto_home	0Bi	0Bi	0Bi	100%	0	0	100%	/home
+2018-02-03 18:15:51.469 ERROR 30949 --- [Thread-5] com.che.service.mon.GetOsInfo            : get memInfo is wrong! memInfoKey_array=[],memValueStr=
+2018-02-03 18:15:51.493  INFO 30949 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@413d1baf: startup date [Sat Feb 03 18:15:46 CST 2018]; root of context hierarchy
+2018-02-03 18:24:57.539  INFO 31009 --- [main] com.che.MonAgentApplication              : Starting MonAgentApplication on chedeMacBook-Pro.local with PID 31009 (/Users/che/IdeaProjects/MonAppAgent/target/classes started by che in /Users/che/IdeaProjects/MonAppAgent)
+2018-02-03 18:24:57.553  INFO 31009 --- [main] com.che.MonAgentApplication              : No active profile set, falling back to default profiles: default
+2018-02-03 18:24:57.753  INFO 31009 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3e92efc3: startup date [Sat Feb 03 18:24:57 CST 2018]; root of context hierarchy
+2018-02-03 18:24:59.391  INFO 31009 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8765 (http)
+2018-02-03 18:24:59.406  INFO 31009 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-03 18:24:59.407  INFO 31009 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-02-03 18:24:59.495  INFO 31009 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-03 18:24:59.495  INFO 31009 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1746 ms
+2018-02-03 18:24:59.632  INFO 31009 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-03 18:24:59.636  INFO 31009 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-03 18:24:59.637  INFO 31009 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-03 18:24:59.637  INFO 31009 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-03 18:24:59.637  INFO 31009 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-03 18:25:00.442  INFO 31009 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3e92efc3: startup date [Sat Feb 03 18:24:57 CST 2018]; root of context hierarchy
+2018-02-03 18:25:00.523  INFO 31009 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getInfo],methods=[GET]}" onto public java.lang.String com.che.controller.GetMonController.getJsonMonInfo(java.lang.String,java.lang.String)
+2018-02-03 18:25:00.524  INFO 31009 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addMonApp],methods=[GET]}" onto public java.lang.String com.che.controller.MonSetController.addMonApp(java.lang.String,java.lang.String,java.lang.String)
+2018-02-03 18:25:00.525  INFO 31009 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/remove],methods=[GET]}" onto public java.lang.String com.che.controller.MonSetController.removeApp(java.lang.String)
+2018-02-03 18:25:00.531  INFO 31009 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-03 18:25:00.533  INFO 31009 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-03 18:25:00.561  INFO 31009 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-03 18:25:00.562  INFO 31009 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-03 18:25:00.594  INFO 31009 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-03 18:25:00.849  INFO 31009 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-03 18:25:00.906  INFO 31009 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8765 (http)
+2018-02-03 18:25:00.909  INFO 31009 --- [main] com.che.init.InitComplenent              : 开始获取当前服务器的ip……
+2018-02-03 18:25:00.927  INFO 31009 --- [main] com.che.init.InitComplenent              : 当前服务器的ip：
+2018-02-03 18:25:00.927  INFO 31009 --- [main] com.che.init.InitComplenent              : 获取被监控应用的初始化数据……
+2018-02-03 18:25:03.248  INFO 31009 --- [main] com.che.service.mon.OperateHost          : 当前服务器已经纳入监控
+2018-02-03 18:25:03.251  INFO 31009 --- [main] com.che.MonAgentApplication              : Started MonAgentApplication in 6.422 seconds (JVM running for 7.193)
+2018-02-03 18:25:03.264 ERROR 31009 --- [Thread-6] com.che.service.mon.GetOsInfo            : get devInfo is wrong! devKeyInfo=[],devValueStr=
+2018-02-03 18:25:03.270 ERROR 31009 --- [Thread-6] com.che.service.mon.GetOsInfo            : get memInfo is wrong! memInfoKey_array=[],memValueStr=
+2018-02-03 18:25:24.335  INFO 31021 --- [main] com.che.MonAgentApplicationTests         : Starting MonAgentApplicationTests on chedeMacBook-Pro.local with PID 31021 (started by che in /Users/che/IdeaProjects/MonAppAgent)
+2018-02-03 18:25:24.337  INFO 31021 --- [main] com.che.MonAgentApplicationTests         : No active profile set, falling back to default profiles: default
+2018-02-03 18:25:24.417  INFO 31021 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@413d1baf: startup date [Sat Feb 03 18:25:24 CST 2018]; root of context hierarchy
+2018-02-03 18:25:26.568  INFO 31021 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@413d1baf: startup date [Sat Feb 03 18:25:24 CST 2018]; root of context hierarchy
+2018-02-03 18:25:26.625  INFO 31021 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getInfo],methods=[GET]}" onto public java.lang.String com.che.controller.GetMonController.getJsonMonInfo(java.lang.String,java.lang.String)
+2018-02-03 18:25:26.630  INFO 31021 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addMonApp],methods=[GET]}" onto public java.lang.String com.che.controller.MonSetController.addMonApp(java.lang.String,java.lang.String,java.lang.String)
+2018-02-03 18:25:26.631  INFO 31021 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/remove],methods=[GET]}" onto public java.lang.String com.che.controller.MonSetController.removeApp(java.lang.String)
+2018-02-03 18:25:26.639  INFO 31021 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-03 18:25:26.640  INFO 31021 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-03 18:25:26.666  INFO 31021 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-03 18:25:26.666  INFO 31021 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-03 18:25:26.697  INFO 31021 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-03 18:25:26.946  INFO 31021 --- [main] com.che.init.InitComplenent              : 开始获取当前服务器的ip……
+2018-02-03 18:25:26.982  INFO 31021 --- [main] com.che.init.InitComplenent              : 当前服务器的ip：
+2018-02-03 18:25:26.982  INFO 31021 --- [main] com.che.init.InitComplenent              : 获取被监控应用的初始化数据……
+2018-02-03 18:25:28.785  INFO 31021 --- [main] com.che.service.mon.OperateHost          : 当前服务器已经纳入监控
+2018-02-03 18:25:28.788  INFO 31021 --- [main] com.che.MonAgentApplicationTests         : Started MonAgentApplicationTests in 4.795 seconds (JVM running for 5.577)
+2018-02-03 18:25:28.797 ERROR 31021 --- [Thread-5] com.che.service.mon.GetOsInfo            : get devInfo is wrong! devKeyInfo=[],devValueStr=
+2018-02-03 18:25:28.803 ERROR 31021 --- [Thread-5] com.che.service.mon.GetOsInfo            : get memInfo is wrong! memInfoKey_array=[],memValueStr=
+2018-02-03 18:25:28.926  INFO 31021 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@413d1baf: startup date [Sat Feb 03 18:25:24 CST 2018]; root of context hierarchy
+2018-02-03 18:33:21.613  INFO 31047 --- [main] com.che.MonAgentApplicationTests         : Starting MonAgentApplicationTests on chedeMacBook-Pro.local with PID 31047 (started by che in /Users/che/IdeaProjects/MonAppAgent)
+2018-02-03 18:33:21.614  INFO 31047 --- [main] com.che.MonAgentApplicationTests         : No active profile set, falling back to default profiles: default
+2018-02-03 18:33:21.648  INFO 31047 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@413d1baf: startup date [Sat Feb 03 18:33:21 CST 2018]; root of context hierarchy
+2018-02-03 18:33:24.635  INFO 31047 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@413d1baf: startup date [Sat Feb 03 18:33:21 CST 2018]; root of context hierarchy
+2018-02-03 18:33:24.694  INFO 31047 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getInfo],methods=[GET]}" onto public java.lang.String com.che.controller.GetMonController.getJsonMonInfo(java.lang.String,java.lang.String)
+2018-02-03 18:33:24.696  INFO 31047 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addMonApp],methods=[GET]}" onto public java.lang.String com.che.controller.MonSetController.addMonApp(java.lang.String,java.lang.String,java.lang.String)
+2018-02-03 18:33:24.696  INFO 31047 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/remove],methods=[GET]}" onto public java.lang.String com.che.controller.MonSetController.removeApp(java.lang.String)
+2018-02-03 18:33:24.700  INFO 31047 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-03 18:33:24.700  INFO 31047 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-03 18:33:24.722  INFO 31047 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-03 18:33:24.723  INFO 31047 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-03 18:33:24.757  INFO 31047 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-03 18:33:24.980  INFO 31047 --- [main] com.che.init.InitComplenent              : 开始获取当前服务器的ip……
+2018-02-03 18:33:25.008  INFO 31047 --- [main] com.che.init.InitComplenent              : 当前服务器的ip：
+2018-02-03 18:33:25.008  INFO 31047 --- [main] com.che.init.InitComplenent              : 获取被监控应用的初始化数据……
+2018-02-03 18:33:26.912  INFO 31047 --- [main] com.che.service.mon.OperateHost          : 当前服务器已经纳入监控
+2018-02-03 18:33:26.918  INFO 31047 --- [main] com.che.MonAgentApplicationTests         : Started MonAgentApplicationTests in 5.669 seconds (JVM running for 6.37)
+2018-02-03 18:33:26.926 ERROR 31047 --- [Thread-5] com.che.service.mon.GetOsInfo            : get devInfo is wrong! devKeyInfo=[],devValueStr=
+2018-02-03 18:33:26.931 ERROR 31047 --- [Thread-5] com.che.service.mon.GetOsInfo            : get memInfo is wrong! memInfoKey_array=[],memValueStr=
+2018-02-03 18:33:27.094  INFO 31047 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@413d1baf: startup date [Sat Feb 03 18:33:21 CST 2018]; root of context hierarchy
